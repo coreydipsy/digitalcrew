@@ -1,0 +1,37 @@
+{% extends "post_list.html" %}
+{% load forum_tags %}
+
+
+{% block headtitle %}
+    Bioconductor Forum
+{% endblock %}
+{% block title %}
+    Bioconductor Forum
+{% endblock %}
+
+
+{% block search %}
+    <div class="ui horizontal basic top-menu segments">
+        {% filter_dropdown %}
+        {% search_bar %}
+    </div>
+
+{% endblock %}
+
+{% block listing %}
+    {% if tag %}
+        <div class="ui blue filter message">
+            Showing : <code>{{ tag }}</code> &bull; <a href="{% url 'tags_list' %}">
+            reset <i class="undo small icon"></i>
+            </a>
+        </div>
+    {% endif %}
+
+    <div class="ui divided items">
+        {% for post in posts %}
+            {% post_details post=post user=request.user avatar=False %}
+        {% empty %}
+            <div class="ui warn message">No posts found. </div>
+        {% endfor %}
+    </div>
+{% endblock %}

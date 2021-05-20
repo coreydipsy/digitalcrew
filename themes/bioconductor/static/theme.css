@@ -1,0 +1,120 @@
+:root {
+    --active-item-color: #337ab7;
+    --active-item-bg-color:#fbfdef;
+    --tag-color: #1881c2;
+    --tag-background:#ececec;
+    --quetion-background:#87B13F;
+    --menu-bg-color:#eff0ef;
+    --has-answers-background: #1881C2;
+    --tutorial-background:#87B13F;
+    --menu-topics-bg-color:#1881c2;
+    --menu-header-hover: #337ab7;
+    --menu-topic-hover: white;
+    --menu-header-bg-hover:#fbfdef;
+    --menu-topics-bg-hover:#fbfdef;
+    --menu-topics-hover:  #2a2b2b;
+    --menu-header-color:#337ab7;
+    --job-background:#AAAAAA;
+    --news-background: #555555;
+    --accepted-answer-background: #1881C2;
+
+}
+
+body > .main.container {
+    width: 97%;
+}
+
+body {
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.answer-text{
+    display: none ;
+}
+.wmd-button > span {
+    background-image: url("/static/pagedown/bar-button.jpg") !important;
+}
+
+.ui.search > .ui.input{
+    width: 100%;
+}
+
+.add-comment.label {
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 88%;
+    background-color: #5cb85c;
+}
+
+
+.ui.text.menu .item.padded {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.answer-form {
+    display: none;
+}
+
+#menu-topics {
+    color: white;
+    font-size: small;
+}
+
+.no-box-shadow {
+    box-shadow: none !important;
+    -webkit-box-shadow: none;
+}
+
+.sorting {
+    min-height: 25px !important;
+    height: 36px;
+}
+
+#menu-topics .item {
+    color: white;
+}
+
+#menu-topics .item:hover {
+    border-radius: 90px
+}
+
+#menu-topics .item.active {
+    color: #2a2b2b;
+    border-radius: 90px
+}
+
+#menu-header .item {
+    padding: 28px 20px 0px 20px;
+    text-transform: uppercase;
+}
+
+.hidden-answer {
+    display: none;
+}
+
+#logo {
+    padding: 0px !important;
+    margin: 3px;
+    background-color: transparent;
+    width: 220px;
+
+}
+
+
+.hide-preview {
+    display: inline;
+}
+
+
+.match {
+    width: max-content;
+}
+
+
+#menu-header .add-question:hover {
+    background-color: #87B13F !important;
+    color: white;
+}
