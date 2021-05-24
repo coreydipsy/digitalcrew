@@ -1,23 +1,23 @@
 {% load static %}
 
 
-<div class="ui three  center aligned column stackable tiny grid">
-    <div class=" left aligned column" style="padding-right: 13%">
+<div class="ui two  center aligned column stackable tiny grid">
+    <div class=" left aligned column" style="padding-right: 20%">
 
         <b>Content</b>
-        <a href="{% url 'post_list' %}#search-anchor">搜尋</a><br>
+        <a href="{% url 'post_list' %}#search-anchor">search</a><br>
         <a href="{% url 'community_list' %}">用戶</a><br>
         <a href="{% url 'tags_list' %}">標籤</a><br>
         <a href="{% url 'badge_list' %}">徽章</a>
 
     </div>
-    <div class="left aligned column" style="padding-right: 12%">
+    <div class="left aligned column" style="padding-right: 20%">
         <b>Help</b>
         <a href="{% url 'pages' 'about' %}">關於我們</a><br>
         <a href="{% url 'pages' 'faq' %}">聯絡我們</a><br>
 
     </div>
-    <div class=" left aligned column">
+ <!--  <div class=" left aligned column">
 
         <b>Access</b>
         <a href="{% url 'pages' 'rss' %}">RSS</a><br>
