@@ -16,7 +16,7 @@ def join(*args):
 # Pagedown
 PAGEDOWN_IMAGE_UPLOAD_ENABLED = False
 
-LANGUAGE_DETECTION = ["en"]
+LANGUAGE_DETECTION = ["en","zh-cn", "zh-tw","ko"]
 
 # Set the home page to the engine or forum
 INTERNAL_IPS = ['127.0.0.1']

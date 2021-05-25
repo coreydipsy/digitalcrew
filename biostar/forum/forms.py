@@ -70,9 +70,10 @@ def informative_choices(choices):
     Map choices for post types to a more informative description.
     """
     mapper = {
-        Post.QUESTION: "Ask a question", Post.TUTORIAL: "Share a Tutorial",
-        Post.JOB: "Post a Job Opening", Post.FORUM: "Start a Discussion",
-        Post.TOOL: "Share a Tool", Post.NEWS: "Announce News"
+        Post.QUESTION: "問問題", Post.TUTORIAL: "分享教學",
+         Post.FORUM: "討論",
+        Post.TOOL: "分享工具", Post.NEWS: "宣布新聞",
+        #Post.JOB: "Post a Job Opening",
     }
     new_choices = []
     for c in choices:
