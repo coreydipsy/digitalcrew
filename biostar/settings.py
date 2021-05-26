@@ -16,7 +16,10 @@ def join(*args):
 # Pagedown
 PAGEDOWN_IMAGE_UPLOAD_ENABLED = False
 
-LANGUAGE_DETECTION = ["en","zh-cn", "zh-tw","ko"]
+LANGUAGE_DETECTION = ["en","zh-cn", "zh-tw","af", "ar", "bg", "bn", "ca",
+"cs", 'cy', "da", "de", "el", "es", 'et', 'fa', 'fi', 'fr', 'gu', 'he',
+'hi', 'hr', 'hu', 'id', 'it', 'ja', 'kn', 'ko', 'lt', 'lv', 'mk', 'ml', 'mr', 'ne', 'nl', 'no', 'pa', 'pl',
+'pt', 'ro', 'ru', 'sk', 'sl', 'so', 'sq', 'sv', 'sw', 'ta', 'te', 'th', 'tl', 'tr', 'uk', 'ur', 'vi']
 
 # Set the home page to the engine or forum
 INTERNAL_IPS = ['127.0.0.1']

@@ -73,7 +73,10 @@ def informative_choices(choices):
         Post.QUESTION: "問問題", Post.TUTORIAL: "分享教學",
          Post.FORUM: "討論",
         Post.TOOL: "分享工具", Post.NEWS: "宣布新聞",
-        #Post.JOB: "Post a Job Opening",
+        Post.BLOG: "部落格",
+        Post.JOB: "尋找夥伴",
+
+
     }
     new_choices = []
     for c in choices:
@@ -120,16 +123,16 @@ class PostLongForm(forms.Form):
 
     choices = informative_choices(choices=choices)
 
-    post_type = forms.IntegerField(label="Post Type",
+    post_type = forms.IntegerField(label="貼文種類",
                                    widget=forms.Select(choices=choices, attrs={'class': "ui dropdown"}),
-                                   help_text="Select a post type.")
+                                   help_text="選擇貼文種類")
     title = forms.CharField(label="Post Title", max_length=200, min_length=2,
                             validators=[valid_title],
-                            help_text="Enter a descriptive title to promote better answers.")
+                            help_text="明確的標題對回答者非常有幫助.")
     tag_val = forms.CharField(label="Post Tags", max_length=MAX_TAG_LEN, required=True, validators=[valid_tag],
 
                               widget=forms.TextInput(attrs={'id': 'tag_val'}),
-                              help_text="""Create a new tag by typing a word then adding a comma.""")
+                              help_text="""輸入跟這個文章相關的標籤""")
 
     content = forms.CharField(widget=forms.Textarea,
                               validators=[valid_language],
